@@ -161,41 +161,65 @@ div.card.text-center{
     box-sizing: border-box;
 }
 
-/* Make Images Responsive */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Navbar Adjustments */
+/* Navbar Fix */
 .navbar {
     width: 100%;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+    background-color: black !important;
 }
 
 .navbar-toggler {
     border: none;
 }
 
-/* Center About Section and Fix Image */
-.about {
-    text-align: center;
-    margin: 50px 0;
+.navbar-collapse {
+    background-color: black !important;
+    padding: 10px;
 }
 
-.about img {
-    width: 80%;
-    max-width: 600px;
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff6600 !important;
+    transform: scale(1.05);
+}
+
+/* Fix Dropdown Menu on Hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin: 0 auto;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Responsive Cards Layout */
-.cards-main, .second-cards, .ddd {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fix Services Section */
+.ddd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.ddd .card {
+        width: 100%;
+        max-width: 350px;  /* Adjust card width */
+        text-align: center;
+}
+
+/* Fix Cards Layout */
+.cards-main, .second-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -208,14 +232,13 @@ img {
     max-width: 300px;
 }
 
-/* Responsive Contact Form */
-#form {
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
+/* Fix Images */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Buttons Styling */
+/* Buttons */
 .btn {
     width: 100%;
     max-width: 150px;
@@ -227,62 +250,117 @@ img {
     transform: scale(1.05);
 }
 
+
 /* MEDIA QUERIES */
+
 
 /* Tablets and Small Laptops */
 @media screen and (max-width: 992px) {
-    .cards-main, .second-cards, .ddd {
+    .ddd {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .card {
-        width: 45%;
+    .ddd .card {
+        width: 45%; /* Cards take half width on tablets */
     }
 }
 
 /* Mobile Devices */
 @media screen and (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
+        .ddd {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .ddd .card {
+            width: 90%; /* Full width on smaller screens */
+        }
     }
 
-    .navbar-toggler {
-        background-color: #fff;
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+    .ddd .card {
+        width: 100%; /* Ensures perfect alignment on mobile */
+    }
+}
+/*  */
+/* Services Section */
+.ddd {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure Services Cards Stay Properly Aligned */
+.ddd .card {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Fix Card Footer */
+.ddd .card-footer {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Fix Buttons */
+.ddd .card .btn {
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets and Small Screens */
+@media screen and (max-width: 992px) {
+    .ddd {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .cards-main, .second-cards, .ddd {
+    .ddd .card {
+        width: 45%;
+    }
+}
+
+/* Fix for 558px Width */
+@media screen and (max-width: 580px) {
+    .ddd {
         flex-direction: column;
         align-items: center;
     }
 
-    .card {
-        width: 100%;
-    }
-
-    .about img {
-        width: 100%;
-    }
-
-    .btn {
-        width: 80%;
-        max-width: 200px;
-    }
-}
-
-/* Extra Small Screens */
-@media screen and (max-width: 480px) {
-    .card {
+    .ddd .card {
         width: 90%;
     }
 
-    .btn {
+    .ddd .card-footer {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .ddd .card .btn {
+        width: 80%;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    .ddd .card {
         width: 100%;
     }
 
-    .about img {
+    .ddd .card .btn {
         width: 100%;
     }
 }
+
 
 
 /* Button Hover Effects */
@@ -366,3 +444,20 @@ img {
         transform: translateY(0);
     }
 }
+/*  */
+/* Services Section */
+
+
+/* Ensure Services Cards Stay Properly Aligned */
+
+
+/* MEDIA QUERIES */
+
+/* Tablets and Small Screens */
+
+
+/* Mobile Screens */
+
+
+/* Extra Small Screens */
+

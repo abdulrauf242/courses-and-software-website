@@ -22,9 +22,22 @@
             <label for="confirm-password">Confirm Password</label>
             <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
 
-            <button type="submit">Sign Up</button>
+            <button id="btn" type="submit">Sign Up</button>
             <p>Already have an account? <a href="#">Login here</a></p>
         </form>
     </div>
+
+<script>
+     document.getElementById('btn').addEventListener('click', function() {
+        alert("You're not eligible for sign-up this page");
+    });
+</script>
+
+
+
+
+
+
+
 </body>
 </html>

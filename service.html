@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+</head>
+<link rel="stylesheet" href="service.css">
+<body>
+    <div id="navbar"></div> <!-- Navbar yahan load hoga -->
+
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    <div class="container">
+        <section class="service-section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-box">
+                    <h3>Web Development</h3>
+                    <p>We build responsive and dynamic websites tailored to your needs.</p>
+                </div>
+                <div class="service-box">
+                    <h3>SEO Optimization</h3>
+                    <p>Boost your online presence with our expert SEO strategies.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Graphic Design</h3>
+                    <p>Creative and visually stunning designs for your business.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Canva Pro</h3>
+                    <p>Advanced design tools for professionals and businesses.</p>
+                </div>
+                <div class="service-box">
+                    <h3>WhatsApp Marketing</h3>
+                    <p>Engage customers through automated and targeted WhatsApp campaigns.</p>
+                </div>
+                <div class="service-box">
+                    <h3>E-commerce Solutions</h3>
+                    <p>Launch and manage your online store with ease.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Lead Generator</h3>
+                    <p>Automate and optimize lead generation for your business growth.</p>
+                </div>
+                <div class="service-box">
+                    <h3>CRM Software</h3>
+                    <p>Manage customer relationships effectively with our CRM solutions.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Email Marketing</h3>
+                    <p>Reach your audience with targeted and automated email campaigns.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Social Media Management</h3>
+                    <p>Optimize and manage your brand's presence across social platforms.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3>AOJNDM Solutions</h3>
+            <p>Providing the best service since 2000</p>
+          </div>
+          <div class="footer-middle">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Company Name. All rights reserved.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>

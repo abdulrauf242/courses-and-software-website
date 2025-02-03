@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Licenses - Your Website</title>
+    <link rel="stylesheet" href="liciense.css">
+</head>
+<body>
+    <div id="navbar"></div> <!-- Navbar yahan load hoga -->
+
+    <script>
+        fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    <header>
+        <h1>Licenses</h1>
+    </header>
+    <main>
+        <section class="license-section">
+            <h2>Software Licenses</h2>
+            <ul>
+                <li>
+                    <strong>Software Name 1</strong> – Licensed under the [License Type] License. <a href="#">View License</a>
+                </li>
+                <li>
+                    <strong>Software Name 2</strong> – Licensed under the [License Type] License. <a href="#">View License</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="license-section">
+            <h2>Content Licenses</h2>
+            <ul>
+                <li>
+                    <strong>Content Type 1</strong> – Licensed under the [License Type] License. <a href="#">View License</a>
+                </li>
+                <li>
+                    <strong>Content Type 2</strong> – Licensed under the [License Type] License. <a href="#">View License</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="license-section">
+            <h2>Third-Party Licenses</h2>
+            <ul>
+                <li>
+                    <strong>Third-Party Content 1</strong> – [License Type] License. <a href="#">View License</a>
+                </li>
+                <li>
+                    <strong>Third-Party Content 2</strong> – [License Type] License. <a href="#">View License</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="license-section">
+            <h2>Font Licenses</h2>
+            <ul>
+                <li>
+                    <strong>Font Name</strong> – Licensed under the [Font License Name] License. <a href="#">View License</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="license-section">
+            <h2>Other Licenses</h2>
+            <ul>
+                <li>
+                    <strong>Resource Name</strong> – Licensed under the [License Type] License. <a href="#">View License</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h3>AOJNDM Solutions</h3>
+            <p>Providing the best service since 2000</p>
+          </div>
+          <div class="footer-middle">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./service.html">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Company Name. All rights reserved.</p>
+        </div>
+      </footer>
+    
+</body>
+</html>

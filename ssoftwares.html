@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Section</title>
+</head>
+<link rel="stylesheet" href="softwares.css">
+<body>
+  <div id="navbar"></div> <!-- Navbar yahan load hoga -->
+
+  <script>
+      fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+  <section class="software-section">
+    <!-- Canva Pro Software Card -->
+    <div class="software-card">
+      <img src="./canva.png" alt="Canva Pro" class="software-logo">
+      <h2>Canva Pro</h2>
+      <p>Create stunning designs effortlessly with powerful design tools and templates.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <!-- WhatsApp Marketing Software Card -->
+    <div class="software-card">
+      <img src="./whatsapp.png" alt="WhatsApp Marketing" class="software-logo">
+      <h2>WhatsApp Marketing</h2>
+      <p>Engage with customers directly through WhatsApp messaging to boost your business.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <!-- Email Marketing Software Card -->
+    <div class="software-card">
+      <img src="email-marketing-logo.png" alt="Email Marketing" class="software-logo">
+      <h2>Email Marketing</h2>
+      <p>Automate email campaigns, increase open rates, and optimize for conversion.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <!-- CRM Software Card -->
+    <div class="software-card">
+      <img src="crm-logo.png" alt="CRM Software" class="software-logo">
+      <h2>CRM Software</h2>
+      <p>Manage customer relationships, track interactions, and boost sales productivity.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+
+    <!-- Lead Generator Software Card -->
+    <div class="software-card">
+      <img src="./leads.png" alt="Lead Generator" class="software-logo">
+      <h2>Lead Generator</h2>
+      <p>Generate high-quality leads for your business with automated tools.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>AOJNDM Solutions</h3>
+        <p>Providing the best service since 2000</p>
+      </div>
+      <div class="footer-middle">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+</body>
+</html>

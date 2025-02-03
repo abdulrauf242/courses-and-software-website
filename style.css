@@ -34,6 +34,11 @@ body{
     gap: 35px;
     padding: 20px;
 }
+div.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
 .second-cards{
     display: flex;
     gap: 35px;
@@ -369,6 +374,7 @@ img {
 .card{
     width: 90%;
     margin: 10px auto;
+    
 }
 
 
@@ -476,3 +482,79 @@ img {
 
 /* Extra Small Screens */
 
+/* General Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-left h3 {
+    font-size: 1.5em;
+  }
+  
+  .footer-middle h4, .footer-right h4 {
+    font-size: 1.2em;
+  }
+  
+  .footer-middle ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-middle ul li, .footer-right ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-middle ul li a, .footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-middle ul li a:hover, .footer-right ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom p {
+    font-size: 0.9em;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-left, .footer-middle, .footer-right {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-left h3 {
+      font-size: 1.2em;
+    }
+  
+    .footer-middle h4, .footer-right h4 {
+      font-size: 1em;
+    }
+  }
+  

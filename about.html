@@ -7,16 +7,29 @@
 </head>
 <link rel="stylesheet" href="./about.css">
 <body>
-    <div id="navbar"></div> <!-- Navbar yahan load hoga -->
 
-    <script>
-        fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading navbar:', error));
-    </script>
+    <div id="navbar"></div> <!-- Navbar dynamically load hoga -->
+
+<script>
+   
+
+   fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+
+
+
+
+
+
+
+
+
+</script>
+
     <div class="about-section">
         <h2>Who We Are</h2>
         <p>At <strong>AOJNDM Solutions</strong>, we are committed to providing innovative software, high-quality educational courses, and professional digital services. Our goal is to help businesses and individuals grow by leveraging the latest technology and marketing strategies.</p>
